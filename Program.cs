@@ -33,8 +33,7 @@ int[] CreateArr(int len) {
 
 void MergeArr(int[] arr1, int[] arr2) {
   int[] arr = new int[arr1.Length + arr2.Length];
-  int j = 0;
-  for(int i = 0; i < arr.Length; i++) {
+  for(int i = 0, j = 0; i < arr.Length; i++) {
     if(i < arr1.Length) {
       arr[i] = arr1[i];
     } else {
